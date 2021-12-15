@@ -25,15 +25,18 @@
               
               <p class="card-text">QR Code</p>
               <div class="input-group mb-lg-3">
-                  <input type="text" name="" class='form-control' id="input">
+                  <input type="text" name="" maxlength="500" class='form-control' id="input">
                   <button class="btn btn-primary" id="gen">Generate</button>
                 </div>
                 <div class="mt-sm-2 text-center">
                   <img src="empty.png" class="img-fluid" alt="ur qr code here" srcset="" id="qr">
               </div>
             </div>
-            <div class="card-footer bg-success ">
+            <div id="done" class="card-footer bg-success visually-hidden ">
               Successfuly Generated
+            </div>
+            <div id="undone" class="card-footer bg-danger visually-hidden ">
+              Unable to Generate Please try later
             </div>
           </div>
     </div>
